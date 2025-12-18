@@ -2,6 +2,7 @@ import React from 'react';
 import { Music, Gamepad2, Car, Code } from 'lucide-react';
 import { useScrollPosition } from '../../hooks/useScrollPosition';
 import { useWindowSize } from '../../hooks/useWindowSize';
+import ProfilePicture from '../ui/ProfilePicture.jpeg';
 import ScrollIndicator from '../ui/ScrollIndicator';
 
 export default function HeroSection({ mousePos }) {
@@ -32,9 +33,13 @@ export default function HeroSection({ mousePos }) {
 
                     <div className="relative z-10">
                         <div className="mb-6 relative">
-                            <div className="w-28 h-28 md:w-32 md:h-32 mx-auto rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-4xl md:text-5xl font-bold relative overflow-hidden">
-                                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/50 to-transparent animate-pulse"></div>
-                                <span className="relative z-10">AC</span>
+                            <div className="w-28 h-28 md:w-32 md:h-32 mx-auto rounded-full overflow-hidden bg-gradient-to-br from-purple-500 to-pink-500 relative flex items-center justify-center">
+                                <img
+                                    src={ProfilePicture}
+                                    alt="Asuna"
+                                    className="w-full h-full object-cover object-[50%_45%] block"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/50 to-transparent animate-pulse pointer-events-none"></div>
                             </div>
                         </div>
 
