@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Instagram, Mail } from 'lucide-react';
+import { Github, GlobeIcon, Mail } from 'lucide-react';
 
 export default function ContactSection() {
     return (
@@ -17,40 +17,21 @@ export default function ContactSection() {
                 <div className="flex flex-col sm:flex-row flex-wrap gap-4 md:gap-6 justify-center">
 
                     {/* Email */}
-                    <a
-                        href="mailto:asuna@cracotte.dev"
-                        className="flex items-center justify-center gap-3 px-6 md:px-8 py-3 md:py-4
-                                   bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold
-                                   hover:scale-105 transition-transform"
-                    >
-                        <Mail className="w-5 h-5" />
+                    <a href="mailto:asuna@cracotte.dev" className="flex items-center justify-center gap-3 px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:scale-105 transition-transform">
+                        <Mail className="w-5 h-5"/>
                         Email Me
                     </a>
 
                     {/* GitHub */}
-                    <a
-                        href="https://github.com/AsuCracotte"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-3 px-6 md:px-8 py-3 md:py-4
-                                   bg-slate-800 hover:bg-slate-700 rounded-full font-semibold
-                                   hover:scale-105 transition-transform border border-purple-500/30"
-                    >
-                        <Github className="w-5 h-5" />
+                    <a href="https://github.com/AsuCracotte" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 px-6 md:px-8 py-3 md:py-4 bg-slate-800 hover:bg-slate-700 rounded-full font-semibold hover:scale-105 transition-transform border border-purple-500/30">
+                        <Github className="w-5 h-5"/>
                         GitHub
                     </a>
 
-                    {/* Instagram */}
-                    <a
-                        href="https://www.instagram.com/asuna._.cracotte/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-3 px-6 md:px-8 py-3 md:py-4
-                                   bg-slate-800 hover:bg-slate-700 rounded-full font-semibold
-                                   hover:scale-105 transition-transform border border-purple-500/30"
-                    >
-                        <Instagram className="w-5 h-5" />
-                        Instagram
+                    {/* APLOSN */}
+                    <a href="https://aplosn.fr" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 px-6 md:px-8 py-3 md:py-4 bg-slate-800 hover:bg-slate-700 rounded-full font-semibold hover:scale-105 transition-transform border border-purple-500/30">
+                        <GlobeIcon className="w-5 h-5"/>
+                        APLOSN
                     </a>
                 </div>
             </div>
