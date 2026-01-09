@@ -24,3 +24,61 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* Hide native scrollbars (global) */
+/* Chrome, Safari and Opera */
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox */
+html, body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Utility class to hide scrollbar on specific elements */
+.no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
+/* Animation 'pop' used to make the indicator reappear smoothly */
+@keyframes pop {
+    0% {
+        transform: translateY(12px) scale(0.95);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(-6px) scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-pop {
+    animation: pop 600ms cubic-bezier(0.22, 1, 0.36, 1) both; /* ease-out-ish */
+}
+
+/* Petite animation "bounce" transformée en rebonds (translation uniquement) :
+   deux petits rebonds par cycle, rythme constant (pas d'effet de pulsation via scale)
+*/
+@keyframes heartbeat {
+    0%   { transform: translateY(0); }
+    10%  { transform: translateY(-8px); }
+    25%  { transform: translateY(0); }
+    35%  { transform: translateY(-5px); }
+    50%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
+
+/* Durée réglée à 1500ms pour un rythme un peu moins lent des rebonds */
+.animate-bounce {
+    animation: heartbeat 1500ms ease-in-out infinite both;
+}

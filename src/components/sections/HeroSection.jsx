@@ -2,8 +2,8 @@ import React from 'react';
 import { Music, Gamepad2, Car, Code } from 'lucide-react';
 import { useScrollPosition } from '../../hooks/useScrollPosition';
 import { useWindowSize } from '../../hooks/useWindowSize';
+import ScrollIndicator from "../ui/ScrollIndicator";
 import ProfilePicture from '../assets/ProfilePicture.jpeg';
-import ScrollIndicator from '../ui/ScrollIndicator';
 
 export default function HeroSection({ mousePos }) {
     const scrollY = useScrollPosition();
@@ -81,5 +81,6 @@ export default function HeroSection({ mousePos }) {
                     </div>
                 </div>
             </div>
+            <ScrollIndicator />
         </section>)
 }
