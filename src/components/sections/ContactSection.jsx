@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, GlobeIcon, Mail } from 'lucide-react';
+import DiscordIcon from "../ui/DiscordIcon.jsx";
 
 export default function ContactSection() {
     return (
@@ -32,6 +33,12 @@ export default function ContactSection() {
                     <a href="https://aplosn.fr" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 px-6 md:px-8 py-3 md:py-4 bg-slate-800 hover:bg-slate-700 rounded-full font-semibold hover:scale-105 transition-transform border border-purple-500/30">
                         <GlobeIcon className="w-5 h-5"/>
                         APLOSN
+                    </a>
+
+                    {/* Discord */}
+                    <a href="https://discord.gg/Hxv2FEgtJp" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 px-6 md:px-8 py-3 md:py-4 bg-slate-800 hover:bg-slate-700 rounded-full font-semibold hover:scale-105 transition-transform border border-purple-500/30">
+                        <DiscordIcon className="w-5 h-5"/>
+                        Discord
                     </a>
                 </div>
             </div>
